@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Portfolio - ArPo Dev</title>
+</head>
+
+<body class="dark">
+  <!-- Barra de encabezado -->
+  <header class="header">
+    
+    <!-- logo -->
+    <div id="logo">
+      <img src="assets/images/logo.png">
+    </div>
+    
+    <div class="toggles">
+      <!-- Selección de Modo -->
+      <div class="tema">
+        <p class="tema-text" data-section="header" data-value="mode">Modo</p>
+        <div id="toggle">
+          <i class="indicator"></i>
+        </div> 
+      </div>
+      
+      <!-- Selección de Idiomas -->
+      <div class="idiomas">
+        <p class="flags-text" data-section="header" data-value="language">Idioma</p>
+        <div id="flags" class="flags">
+          <div class="flags__item active" data-language="es">
+            <img src="assets/icons/es.svg" alt="" class="flags__img">
+          </div>
+          <div class="flags__item" data-language="en">
+            <img src="assets/icons/gb.svg" alt="" class="flags__img">
+          </div>
+          <div class="flags__item" data-language="pt">
+            <img src="assets/icons/pt.svg" alt="" class="flags__img">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Selección de colores -->
+      <div class="colores">
+        <p class="colores-text" data-section="header" data-value="color">Colores</p>
+        <div id="toggle-colors" class="colors">
+          <div data-color="hsl(214, 84%, 56%)" class="colors__item 
+          colors__item--blue active"></div>
+          <div data-color="hsl(150, 84%, 56%)" class="colors__item 
+          colors__item--green"></div>
+          <div data-color="hsl(276, 84%, 56%)" class="colors__item 
+          colors__item--purple"></div>
+          <div data-color="hsl(46, 84%, 56%)" class="colors__item 
+          colors__item--orange"></div>
+        </div>
+      </div>
+    </div>
+      
+  </header>
+  
+  <!-- Barra de navegación lateral -->
+
+  <main class="main">
+    <section class="column column--nav">
+      <!-- PROFILE CARD -->
+      <div class="navigation">
+        <div class="menuToggle"></div>
+        <ul>
+          <li class="list active" style="--clr:#f44336;">
+            <a href="#">
+              <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+              <span class="text">Home</span>
+            </a>
+          </li>
+          <li class="list" style="--clr:#ffa117;">
+            <a href="#">
+              <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+              <span class="text">About</span>
+            </a>
+          </li>
+          <li class="list" style="--clr:#2196f3;">
+            <a href="#">
+              <span class="icon"><ion-icon name="camera-outline"></ion-icon></span>
+              <span class="text">Projects</span>
+            </a>
+          </li>
+          <li class="list" style="--clr:#0fc70f;">
+            <a href="#">
+              <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+              <span class="text">Contact</span>
+            </a>
+          </li>
+          <!-- <li class="list" style="--clr:#b145e9;">
+            <a href="#">
+              <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+              <span class="text">Settings</span>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </section>
+
+    <section class="column column--left">
+      <!-- PROFILE CARD -->      
+      <article class="card card--profile">
+        <div class="card__image-container">
+          <img src="assets/images/yo.jpeg" alt="">
+        </div>
+        <div class="card__header">
+          <h2 class="card__title no-margin">Pablo J. Diaz</h2>
+          <p class="card__subtittle no-margin" data-section="profile" data-value="rol">
+            Full Stack developer</p>
+        </div>
+        <div class="card__body">
+          <!-- <div class="card__link">
+            <i class="fas fa-envelope icon"></i>
+            <a href="mailto:pianpa@gmail.com">pianpa@gmail.com</a>
+          </div> -->
+          <!-- <div class="card__link">
+            <i class="fas fa-phone-alt icon"></i>
+            <a href="tel:123456789">+542964622121</a>
+          </div> -->
+          <p class="card__text" data-section="profile" data-value="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dicta deleniti dolores, itaque minima
+            doloribus tenetur quisquam. Quos velit nostrum eligendi corrupti culpa labore at, esse nesciunt harum
+          </p>
+        </div>
+      </article>
+      <!-- Tarjetas de experiencia -->
+      <article class="card card--experience">
+        <h2 class="card__title">Experiences</h2>
+        <div class="experience">
+          <!-- <img src="assets/images/log2.png" alt="logo" class="experience__image"> -->
+          <div class="experience__info">
+            <p class="experience__time">
+              Jun 2021 - Current
+            </p>
+            <h3 class="experience__job">Full Stack Developer</h3>
+            <p class="experience__detail">Lorem ipsum dolor sit, amet coasdasdadhga asdad nsectetur adipisicing elit.
+              Error sint, nisi
+              quos harum ab atque repudiandae.
+              Debitis.</p>
+          </div>
+        </div>
+        <div class="experience">
+          <!-- <img src="assets/images/log1.png" alt="logo" class="experience__image"> -->
+          <div class="experience__info">
+            <p class="experience__time">
+              Dic 2012 - Oct 2013
+            </p>
+            <h3 class="experience__job">Vb6 Developer</h3>
+            <p class="experience__detail">Lorem ipsum dolor sit, as werwr w erwerwr werwer sdjdashd ka asdn aksda asd a
+              a adsadad met consectetur adipisicing elit.!
+              Debitis.</p>
+          </div>
+        </div>
+        <div class="experience">
+          <!-- <img src="assets/images/logo.png" alt="logo" class="experience__image"> -->
+          <div class="experience__info">
+            <p class="experience__time">
+              Feb 2007 - May 2009
+            </p>
+            <h3 class="experience__job">Vb6 Developer</h3>
+            <p class="experience__detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error sint, nisi
+              quos harum ab atque repudiandae voluptates sunt.
+              Debitis.</p>
+          </div>
+        </div>
+      </article>
+      <article class="card card__hobbies">
+        <h2 class="card__title">Hobbies</h2>
+        <div class="card__image-container">
+          <img src="assets/images/hobbie.jpg" alt="man on a bike">
+        </div>
+        <h3 class="hobbie__title">Walking</h3>
+        <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia perferendis nisi
+          assumenda quo porro incidunt?</p>
+      </article>
+    </section>
+
+    <section class="column column--right">
+      <!-- Tarjetas de Tegnologias -->
+      <article class="card">
+        <h2 class="card__title">Front End</h2>
+        <small data-section="skills" data-value="experience">Años de experiencia</small>
+        <div class="skills">
+          <div class="skills__header">
+            <span class="skills__star-level">0</span>
+            <span class="skills__star-level">2</span>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">HTML</p>
+            <div class="skills__bar skills__bar--50"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">CSS</p>
+            <div class="skills__bar skills__bar--30"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">JS</p>
+            <div class="skills__bar skills__bar--10"></div>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Back End</h2>
+        <small data-section="skills" data-value="experience">Años de experiencia</small>
+        <div class="skills">
+          <div class="skills__header">
+            <span class="skills__star-level">0</span>
+            <span class="skills__star-level">1</span>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">Python</p>
+            <div class="skills__bar skills__bar--50"></div>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Databases</h2>
+        <small data-section="skills" data-value="experience">Años de experiencia</small>
+        <div class="skills">
+          <div class="skills__header">
+            <span class="skills__star-level">0</span>
+            <span class="skills__star-level">5</span>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">SQL Server</p>
+            <div class="skills__bar skills__bar--80"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">PostgreSQL</p>
+            <div class="skills__bar skills__bar--40"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">MySQL</p>
+            <div class="skills__bar skills__bar--40"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">Oracle</p>
+            <div class="skills__bar skills__bar--20"></div>
+          </div>
+        </div>
+      </article>
+      <!-- proyectos -->
+      <article class="card card--project">
+        <div class="card__image-container">
+          <img src="assets/images/project.jpg" alt="Landing page" class="card__image">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#JavaScript</span>
+            <span class="project__tag">#Responsive</span>
+          </div>
+          <h2 class="card_title">Landing Page</h2>
+          <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dicta porro animi in
+            expedita facere nulla suscipit repudiandae veniam, tempora deleniti cumque blanditiis sequi fuga vero optio
+            sint veritatis delectus sed! Ut laboriosam minus optio maxime et, architecto, voluptatibus eveniet repellat
+            quo sequi, quaerat eaque?</p>
+          <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dicta porro animi in
+            expedita facere nulla suscipit repudiandae veniam, tempora deleniti cumque blanditiis sequi fuga vero optio
+            sint veritatis delectus sed! Ut laboriosam minus optio maxime et, architecto, voluptatibus eveniet repellat
+            quo sequi, quaerat eaque?</p>
+          <div class="buttons">
+            <a href="https://pianpa.github.io/portfolio/" target="_blank" 
+            class="button button--primary">Demo</a>
+            <a href="https://github.com/pianpa/portfolio" target="_blank" 
+            class="button button--ghost">Code</a>
+          </div>
+        </div>
+      </article>
+      <article class="card card--project">
+        <div class="card__image-container">
+          <img src="assets/images/project.jpg" alt="Landing page" class="card__image">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#JavaScript</span>
+            <span class="project__tag">#Responsive</span>
+          </div>
+          <h2 class="card_title">Landing Page</h2>
+          <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dicta porro animi in
+            expedita facere nulla suscipit repudiandae veniam, tempora deleniti cumque blanditiis sequi fuga vero optio
+            sint veritatis delectus sed! Ut laboriosam minus optio maxime et, architecto, voluptatibus eveniet repellat
+            quo sequi, quaerat eaque?</p>
+          <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dicta porro animi in
+            expedita facere nulla suscipit repudiandae veniam, tempora deleniti cumque blanditiis sequi fuga vero optio
+            sint veritatis delectus sed! Ut laboriosam minus optio maxime et, architecto, voluptatibus eveniet repellat
+            quo sequi, quaerat eaque?</p>
+          <div class="buttons">
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">Code</a>
+          </div>
+        </div>
+      </article>
+      <article class="card card--project">
+        <div class="card__image-container">
+          <img src="assets/images/project.jpg" alt="Landing page" class="card__image">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#JavaScript</span>
+            <span class="project__tag">#Responsive</span>
+          </div>
+          <h2 class="card_title">Landing Page</h2>
+          <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dicta porro animi in
+            expedita facere nulla suscipit repudiandae veniam, tempora deleniti cumque blanditiis sequi fuga vero optio
+            sint veritatis delectus sed! Ut laboriosam minus optio maxime et, architecto, voluptatibus eveniet repellat
+            quo sequi, quaerat eaque?</p>
+          <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dicta porro animi in
+            expedita facere nulla suscipit repudiandae veniam, tempora deleniti cumque blanditiis sequi fuga vero optio
+            sint veritatis delectus sed! Ut laboriosam minus optio maxime et, architecto, voluptatibus eveniet repellat
+            quo sequi, quaerat eaque?</p>
+          <div class="buttons">
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">Code</a>
+          </div>
+        </div>
+      </article>
+      <article class="card card--project">
+        <div class="card__image-container">
+          <img src="assets/images/project.jpg" alt="Landing page" class="card__image">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#JavaScript</span>
+            <span class="project__tag">#Responsive</span>
+          </div>
+          <h2 class="card_title">Landing Page</h2>
+          <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dicta porro animi in
+            expedita facere nulla suscipit repudiandae veniam, tempora deleniti cumque blanditiis sequi fuga vero optio
+            sint veritatis delectus sed! Ut laboriosam minus optio maxime et, architecto, voluptatibus eveniet repellat
+            quo sequi, quaerat eaque?</p>
+          <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dicta porro animi in
+            expedita facere nulla suscipit repudiandae veniam, tempora deleniti cumque blanditiis sequi fuga vero optio
+            sint veritatis delectus sed! Ut laboriosam minus optio maxime et, architecto, voluptatibus eveniet repellat
+            quo sequi, quaerat eaque?</p>
+          <div class="buttons">
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">Code</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

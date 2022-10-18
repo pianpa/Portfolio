@@ -1,0 +1,16 @@
+{
+    "profile": {
+        "rol": "Desarrollador Full Stack",
+        "description": "Apasionado por el desarrollo, autodidacta y en permamente formación."
+    },
+
+    "skills": {
+        "experience": "Años de experiencia"
+    },
+
+    "header": {
+        "mode": "Modo",
+        "language": "Idioma",
+        "color": "Colores"
+    }
+}
