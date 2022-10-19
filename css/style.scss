@@ -25,6 +25,7 @@ a {
 
 p {
     margin: 0;
+    font-size: 0.8rem;
 }
 
 img {
@@ -139,21 +140,18 @@ body.dark {
 
             .flags {
                 display: flex;
-                width: 150px;
+                width: 120px;
+                height: 30px;
 
                 .flags__item {
-                    width: 50px;
-                    margin-left: 5px;
-
-                    &.active {
-                        border: 2px solid white;
-                        box-shadow: -3px 0px 7px #ffebff, 3px 0px 7px #ffebff;
-                    }
+                    width: 100%;
+                    height: 100%;
                 }
 
                 .flags__img {
                     display: block;
                     cursor: pointer;
+                    width: 30px;
                     height: 30px;
                 }
             }
@@ -239,7 +237,6 @@ body.dark {
 
 .card {
     padding: 1em;
-    // background-color: var(--bg-card-color);
     border-radius: var(--border-radius);
     background: rgba(244, 121, 237, 0.2);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -261,8 +258,22 @@ body.dark {
 }
 
 .card__title {
-    margin-bottom: 1.5em;
+    margin-bottom: 0.3em;
     font-size: 1.2em;
+}
+
+.card--tech {
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+
+    .title-tech {
+        text-align: center;
+        margin: 0;
+    }
+
+    .small {
+        text-align: center;
+        font-size: 0.8rem;
+    }
 }
 
 .card__subtitle {
@@ -288,7 +299,7 @@ body.dark {
 }
 
 .skills {
-    padding: 1em 0;
+    padding: 0.2em 0;
 }
 
 .skills__header {
@@ -308,6 +319,36 @@ body.dark {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0.5em;
+}
+
+.skill__fe1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    gap: 0.5em;
+
+    img {
+        width: 30px;
+        height: 30px;
+        margin: 0;
+    }
+}
+
+.skill__fe2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0.1em;
+    margin-top: 0.8em;
+    gap: 0.5em;
+
+    img {
+        width: 30px;
+        height: 30px;
+        margin: 0;
+    }
 }
 
 .skills__bar,
